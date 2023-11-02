@@ -1,0 +1,15 @@
+app:
+  name: keladay-wind-turbine-app
+  namespace: keladay
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/keladay-wind-turbine
+  org: WindTurbineInc
+  name: keladay-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: keladay/wind-turbine-app
+  tag: latest
